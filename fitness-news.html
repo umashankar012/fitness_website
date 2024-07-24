@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitlife-News</title>
+    <link rel="stylesheet" href="fitness-news.css">
+</head>
+<body>
+    <!-- navbar 1 -->
+    <nav id="nav1">
+        <div class="container main-nav flex">
+            <a href="#"class="company-logo">
+                <img src="fitness_images/fitness-logodesign.png" alt="company-logo" height="100px">
+            </a>
+
+            <div class="navlinks">
+                <ul class="flex">
+                    <li><a href="fitness-home.html" class="hover-links">Home</a></li>
+                    <li><a href="#work" class="hover-links">Workouts</a></li>
+                    <li><a href="fitness-news.html" class="hover-links">News</a></li>
+                    <li><a href="#" class="hover-links">Contact Us</a></li>
+                    <li><a href="fitness-SignIn.html" class="hover-links secondary-button" >Sign In</a></li>
+                    <li><a href="fitness-SignUp.html" class="hover-links primary-button" >Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar 2 -->
+    <nav id="nav2">
+        <div class="main-nav container flex">
+             <a href="#" onclick="reload()" class="logo">
+                <img src="fitness_news/home-logo.png" alt="logo" height="50px" style="border-radius: 30px;">
+            </a> 
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+              
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+
+                    <li class="hover-link nav-item" id="Health" onclick="onNavItemClick('Health')">Health</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" name="" id="search-text" class="news-input" placeholder="e.g. Fitness">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+                </div>
+
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam doloremque veniam sit minima recusandae. Soluta pariatur, tempore repellendus necessitatibus accusamus esse vel laborum libero harum, animi, consectetur odio nemo!</p>
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur magnam doloremque veniam sit minima recusandae. Soluta pariatur, tempore repellendus necessitatibus accusamus esse vel laborum libero harum, animi, consectetur odio nemo!</p>
+            </div>
+        </div>
+    </template>
+
+    <!-- footer section -->
+    <footer>
+        <div class="container flex footer-container">
+            <a href="#" class="company-logo">
+                <img src="fitness_images/fitness-logodesign.png" alt="company-logo" height="100px">
+            </a>
+            <div class="link-column flex">
+                <h4>Product</h4>
+                <a href="#" class="hover-links">Overview</a>
+                <a href="#" class="hover-links">Customers</a>
+                <a href="#" class="hover-links">Status Page</a>
+                <a href="#" class="hover-links">Services</a>
+                <a href="#" class="hover-links">Community Support</a>
+            </div>
+
+            <div class="link-column flex">
+                <h4 id="work">Workouts</h4>
+                <a href="fitness-gym.html" class="hover-links">Gymnasium</a>
+                <a href="fitness-HIIT.html" class="hover-links">HIIT</a>
+                <a href="#" class="hover-links">Yoga</a>
+                <a href="#" class="hover-links">Home Workout</a>
+                <a href="#" class="hover-links">Zumba</a>
+                <a href="#" class="hover-links">Strength Training</a>
+            </div>
+
+            <div class="link-column">
+                <h4>Contact Us</h4>
+                <p>Contact NO: +91 9845XXXXXX</p>
+                <p>Email Id:fitlife123@email.com</p>
+                <address>Fitlife Office,Level 1,Block 2
+                    Signature Towers,Cyber City
+                    Gurgaon,Haryana,120XXXX
+                    
+                </address>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- sub-footer section -->
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <a href="#" class="hover-links">Privacy Policy</a>
+            <a href="#" class="hover-links">Terms & Conditions</a>
+            <a href="#" class="hover-links">Securtiy Information</a>
+            
+        </div>
+    </div>
+
+    <script src="fitness-news.js"></script>
+</body>
+</html>
